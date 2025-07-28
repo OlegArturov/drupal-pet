@@ -1,0 +1,18 @@
+/* MUI Theme Styles */
+.mui-theme-container {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Custom MUI theme overrides */
+.mui-theme-container .MuiButton-root {
+  text-transform: none;
+}
+
+.mui-theme-container .MuiCard-root {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure MUI components work well within Drupal */
+.mui-theme-container * {
+  font-family: inherit;
+} 

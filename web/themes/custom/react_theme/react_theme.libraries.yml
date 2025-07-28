@@ -1,0 +1,14 @@
+react-app:
+  version: VERSION
+  js:
+    /libraries/react-app/react-app.js: {}
+  css:
+    theme:
+      css/react-global.css: {}
+      css/mui-theme.css: {}
+
+base-theme:
+  version: VERSION
+  css:
+    theme:
+      css/base-theme.css: {} 

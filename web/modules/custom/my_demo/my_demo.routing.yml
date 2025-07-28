@@ -1,0 +1,23 @@
+my_demo.page_one:
+  path: '/my-page-one'
+  defaults:
+    _controller: '\Drupal\my_demo\Controller\MyDemoController::pageOne'
+    _title: 'Page One'
+  requirements:
+    _permission: 'access content'
+
+my_demo.page_two:
+  path: '/my-page-two'
+  defaults:
+    _controller: '\Drupal\my_demo\Controller\MyDemoController::pageTwo'
+    _title: 'Page Two'
+  requirements:
+    _permission: 'access content'
+
+my_demo.test_front_page:
+  path: '/test-front-page'
+  defaults:
+    _controller: '\Drupal\my_demo\Controller\MyDemoController::testFrontPage'
+    _title: 'Test Front Page'
+  requirements:
+    _permission: 'access content'

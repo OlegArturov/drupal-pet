@@ -1,0 +1,136 @@
+/* Base theme styles for React Theme */
+
+/* Import Claro styles */
+@import url('/core/themes/claro/css/base/elements.css');
+@import url('/core/themes/claro/css/base/forms.css');
+@import url('/core/themes/claro/css/base/layout.css');
+@import url('/core/themes/claro/css/base/navigation.css');
+@import url('/core/themes/claro/css/base/typography.css');
+
+/* Custom theme overrides */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+
+/* Navigation styles */
+nav {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav a {
+  color: #1976d2;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+/* Main content area */
+.layout-content {
+  background: #fff;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+/* Button styles */
+.button, .btn {
+  background: #1976d2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.button:hover, .btn:hover {
+  background: #1565c0;
+  text-decoration: none;
+}
+
+/* Form styles */
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Links */
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.layout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .layout-container {
+    padding: 0 0.5rem;
+  }
+  
+  .layout-content {
+    padding: 1rem;
+  }
+} 

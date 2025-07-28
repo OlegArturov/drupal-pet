@@ -1,0 +1,8 @@
+name: React Theme
+type: theme
+base theme: claro
+description: 'A custom theme with React 19 and MUI integration'
+core_version_requirement: ^9 || ^10 || ^11
+libraries:
+  - react_theme/base-theme
+  - react_theme/react-app 

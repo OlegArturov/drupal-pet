@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React + MUI Test</title>
+    
+    <!-- React 19.1.0 Production -->
+    <script src="https://unpkg.com/react@19.1.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@19.1.0/umd/react-dom.production.min.js"></script>
+    
+    <!-- Emotion -->
+    <script src="https://unpkg.com/@emotion/react@11.11.0/dist/emotion-react.umd.min.js"></script>
+    <script src="https://unpkg.com/@emotion/styled@11.11.0/dist/emotion-styled.umd.min.js"></script>
+    
+    <!-- Material-UI Production -->
+    <script src="https://unpkg.com/@mui/material@6.0.0/umd/material-ui.production.min.js"></script>
+    <script src="https://unpkg.com/@mui/icons-material@6.0.0/index.umd.min.js"></script>
+    
+    <!-- Our React App -->
+    <script src="web/libraries/react-app/react-app.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        }
+        #react-root {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="react-root"></div>
+    
+    <script>
+        // Проверяем, что React загрузился
+        console.log('React version:', React.version);
+        console.log('ReactDOM version:', ReactDOM.version);
+        console.log('Material-UI available:', typeof MaterialUI !== 'undefined');
+        console.log('Our ReactApp available:', typeof ReactApp !== 'undefined');
+    </script>
+</body>
+</html> 
