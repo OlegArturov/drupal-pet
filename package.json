@@ -8,6 +8,7 @@
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development --watch",
     "update-dashboard": "npm install drupal-dashboard@latest",
+    "update-analytics": "npm install analytics-dashboard-test-widget@latest",
     "upd-react-custom": "npm run update-dashboard && npm run build"
   },
   "author": "",
@@ -15,16 +16,23 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^6.0.0",
-    "@mui/material": "^6.0.0",
-    "drupal-dashboard": "^1.0.10",
+    "@mui/icons-material": "^7.2.0",
+    "@mui/lab": "^7.0.0-beta.16",
+    "@mui/material": "^7.2.0",
+    "analytics-dashboard-test-widget": "^1.0.4",
+    "apexcharts": "3.49.0",
+    "drupal-dashboard": "^1.0.13",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-apexcharts": "1.4.1",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1",
+    "typescript": "5.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
     "@babel/preset-react": "^7.23.0",
+    "@babel/preset-typescript": "^7.26.0",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.10.0",
     "style-loader": "^3.3.0",

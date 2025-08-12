@@ -1,7 +1,7 @@
 react-app:
   version: VERSION
   js:
-    /libraries/react-app/react-app.js: {}
+    /libraries/react-app/react-app.js: { preprocess: false, minified: true, attributes: { defer: true } }
   css:
     theme:
       css/react-global.css: {}

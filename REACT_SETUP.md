@@ -1,43 +1,43 @@
-# React 19.1.0+ и MUI Setup для Drupal
+# React 19.1.0+ and MUI Setup for Drupal
 
-Этот проект настроен для использования React 19.1.0+, React-DOM 19.1.0+ и Material-UI в Drupal.
+This project is configured to use React 19.1.0+, React-DOM 19.1.0+ and Material-UI in Drupal.
 
-## Установка зависимостей
+## Installing Dependencies
 
-1. Установите Node.js зависимости:
+1. Install Node.js dependencies:
 ```bash
 npm install
 ```
 
-2. Соберите React приложение:
+2. Build React application:
 ```bash
 npm run build
 ```
 
-## Структура проекта
+## Project Structure
 
-### React и MUI библиотеки
-- **React 19.1.0+** - доступен глобально через CDN
-- **React-DOM 19.1.0+** - доступен глобально через CDN  
-- **Material-UI 6.0.0+** - загружается отдельно с кастомной темой
+### React and MUI Libraries
+- **React 19.1.0+** - available globally via CDN
+- **React-DOM 19.1.0+** - available globally via CDN  
+- **Material-UI 6.0.0+** - loaded separately with custom theme
 
-### Кастомная тема
-- `web/themes/custom/react_theme/` - кастомная Drupal тема с React интеграцией
-- `web/themes/custom/react_theme/css/` - стили для React и MUI
-- `web/themes/custom/react_theme/templates/` - Twig шаблоны
+### Custom Theme
+- `web/themes/custom/react_theme/` - custom Drupal theme with React integration
+- `web/themes/custom/react_theme/css/` - styles for React and MUI
+- `web/themes/custom/react_theme/templates/` - Twig templates
 
-### React компоненты
-- `web/modules/custom/my_demo/js/react-app.js` - основной React компонент
-- `web/libraries/react-app/` - собранные React файлы
+### React Components
+- `web/modules/custom/my_demo/js/react-app.js` - main React component
+- `web/libraries/react-app/` - built React files
 
-## Использование
+## Usage
 
-### Активация темы
-1. Перейдите в админ панель Drupal
+### Activating Theme
+1. Go to Drupal admin panel
 2. Appearance → Themes
-3. Активируйте "React Theme"
+3. Activate "React Theme"
 
-### Использование в модулях
+### Using in Modules
 ```php
 return [
   '#type' => 'markup',
@@ -50,34 +50,34 @@ return [
 ];
 ```
 
-### Кастомная MUI тема
-Тема MUI настроена с:
-- Primary цвет: #1976d2 (синий)
-- Secondary цвет: #dc004e (розовый)
-- Шрифт: Roboto
+### Custom MUI Theme
+MUI theme is configured with:
+- Primary color: #1976d2 (blue)
+- Secondary color: #dc004e (pink)
+- Font: Roboto
 
-## Разработка
+## Development
 
-### Режим разработки
+### Development Mode
 ```bash
 npm run dev
 ```
 
-### Продакшн сборка
+### Production Build
 ```bash
 npm run build
 ```
 
-## Особенности
+## Features
 
-1. **Глобальный доступ**: React и React-DOM доступны глобально через `window.React` и `window.ReactDOM`
-2. **Кастомная тема MUI**: Создана отдельная тема с настройками цветов и типографики
-3. **Webpack сборка**: Настроена сборка с Babel для поддержки современного JavaScript
-4. **Drupal интеграция**: Полная интеграция с системой библиотек Drupal
+1. **Global Access**: React and React-DOM are available globally via `window.React` and `window.ReactDOM`
+2. **Custom MUI Theme**: Separate theme created with color and typography settings
+3. **Webpack Build**: Build configured with Babel for modern JavaScript support
+4. **Drupal Integration**: Full integration with Drupal library system
 
-## Файлы конфигурации
+## Configuration Files
 
-- `package.json` - Node.js зависимости
-- `webpack.config.js` - конфигурация сборки
-- `web/themes/custom/react_theme/react_theme.libraries.yml` - библиотеки Drupal
-- `web/themes/custom/react_theme/react_theme.info.yml` - информация о теме 
+- `package.json` - Node.js dependencies
+- `webpack.config.js` - build configuration
+- `web/themes/custom/react_theme/react_theme.libraries.yml` - Drupal libraries
+- `web/themes/custom/react_theme/react_theme.info.yml` - theme information 

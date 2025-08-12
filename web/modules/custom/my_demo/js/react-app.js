@@ -5,6 +5,7 @@ import { CssBaseline, Box, Typography, Button, Card, CardContent, AppBar, Toolba
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import DashboardPage from 'drupal-dashboard';
+import Analytics from 'analytics-dashboard-test-widget';
 
 console.log('React version:', React.version);
 console.log('createRoot available:', typeof createRoot !== 'undefined');
@@ -45,7 +46,7 @@ function App() {
         );
       case 'page2':
         return (
-          <Card sx={{ maxWidth: 600, mx: 'auto', mt: 3 }}>
+          <Card sx={{ maxWidth: 900, mx: 'auto', mt: 3 }}>
             <CardContent>
               <Typography variant="h4" component="h2" gutterBottom>
                 This is the second page
@@ -54,6 +55,8 @@ function App() {
                 Another page showing the power of React and MUI in Drupal.
               </Typography>
             </CardContent>
+
+            <Analytics/>
           </Card>
         );
       default:
@@ -73,6 +76,7 @@ function App() {
   };
 
   return (
+    // <Analytics/>
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{ flexGrow: 1 }}>
